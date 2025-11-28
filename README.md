@@ -23,6 +23,7 @@ The infrastructure consists of:
 - **ECS Cluster** running on self-managed EC2 instances
 - **EFS File System** with mount points in each AZ
 - **CodePipeline** automating build and deployment from GitHub
+
   ![alt](https://raw.githubusercontent.com/zaeemattique/InnovationLab-Task7/refs/heads/main/Task7%20Architecture.drawio.png)
 
 ##  Getting Started
