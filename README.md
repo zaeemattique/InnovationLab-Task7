@@ -2,7 +2,7 @@
 
 A comprehensive guide for deploying a highly available Node.js application on AWS ECS with automated CI/CD using CodePipeline.
 
-## 📋 Project Overview
+##  Project Overview
 
 This project demonstrates a production-ready architecture for deploying containerized Node.js applications on AWS ECS (Elastic Container Service) with:
 
@@ -13,7 +13,7 @@ This project demonstrates a production-ready architecture for deploying containe
 - **CI/CD Pipeline**: Automated deployment via AWS CodePipeline
 - **Containerization**: Docker containers stored in Amazon ECR
 
-## 🏗️ Architecture
+##  Architecture
 
 The infrastructure consists of:
 
@@ -24,7 +24,7 @@ The infrastructure consists of:
 - **EFS File System** with mount points in each AZ
 - **CodePipeline** automating build and deployment from GitHub
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -145,7 +145,7 @@ Configure AWS CodePipeline with three stages:
 - Monitor task deployment in ECS console
 - Access application via ALB DNS name
 
-## ⚠️ Important Considerations
+##  Important Considerations
 
 ### Key Challenges & Solutions
 
@@ -174,7 +174,7 @@ Configure AWS CodePipeline with three stages:
 - **Docker**
 - **Node.js**
 
-## 📊 Resource Naming Convention
+##  Resource Naming Convention
 
 All resources follow the naming pattern: `Task7-<ResourceType>-Zaeem`
 
@@ -183,11 +183,11 @@ Examples:
 - ECS Cluster: `Task7-ECS-Cluster-Zaeem`
 - Pipeline: `Task7-Pipeline-Zaeem`
 
-## 📝 License
+##  License
 
 This project is created as part of a Cloud Internship training program.
 
-## 👤 Author
+##  Author
 
 **Zaeem Attique Ashar**  
 Cloud Intern
