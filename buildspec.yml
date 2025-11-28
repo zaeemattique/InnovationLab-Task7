@@ -31,3 +31,7 @@ phases:
       - echo Pushing image to ECR...
       - docker push $ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$REPO_NAME:$IMAGE_TAG
       - echo Build completed.
+
+artifacts:
+  files:
+    - '**/*'
