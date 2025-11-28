@@ -31,9 +31,10 @@ phases:
       - echo Pushing image to ECR...
       - docker push $ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$REPO_NAME:$IMAGE_TAG
       - echo Build completed.
-      - printf '[{"name":"%s","imageUri":"%s"}]' "$REPO_NAME" "$ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$REPO_NAME:$IMAGE_TAG" > imagedefinitions.json
+
+      # Create imagedefinitions.json using the container name from your AppSpec
+      - printf '[{"name":"%s","imageUri":"%s"}]' "NodeJS-App" "$ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$REPO_NAME:$IMAGE_TAG" > imagedefinitions.json
 
 artifacts:
   files:
-    - '**/*'
     - imagedefinitions.json
